@@ -16,16 +16,16 @@ public class FormationDaoImpl implements FormationDao {
 
 	@Override
 	public String quiSuisJe() {
-		return " je suis une impl�mentation de FormationDao ";
+		return " je suis une implementation de FormationDao ";
 	}
 
 	@Override
 	public List<Formation> findAll() {
-		// on va ex�cuter une requ�te pour r�cup�rer la liste des formations en
+		// on va executer une requete pour recuperer la liste des formations en
 		// BD
-		Formation formation1 = new Formation(1L, "Spring : Etape par �tape pour devenir professionnel",
+		Formation formation1 = new Formation(1L, "Spring : Etape par etape pour devenir professionnel",
 				"un descriptif");
-		Formation formation2 = new Formation(2L, "Hibernate : Etape par �tape pour devenir professionnel",
+		Formation formation2 = new Formation(2L, "Hibernate : Etape par etape pour devenir professionnel",
 				"un descriptif");
 		Formation formation3 = new Formation(3L, "JPA : Etape par �tape pour devenir professionnel", "un descriptif");
 		List<Formation> formations = new ArrayList<>();

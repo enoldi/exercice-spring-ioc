@@ -11,8 +11,8 @@
 
     <!-- Service bean ici -->
     <bean id="formationService" class="fr.zaroumia.formation.spring.service.FormationServiceImpl">
-        <constructor-arg ref="formationDAO"></constructor-arg>
-        <constructor-arg value="ZORRO"></constructor-arg>
+        <property name="formationDao" ref="formationDAO"></property>
+        <property name="etablissement" value="ZORRO"></property>
     </bean>
 
 </beans>
